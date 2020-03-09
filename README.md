@@ -18,14 +18,17 @@ yarn start   # or npm start
 
 ## Testing
 
-Open your browser at [http://localhost:4000](http://localhost:4000) and start sending queries.
+Open your browser at [http://localhost:5555](http://localhost:5555) and start sending queries.
 
 **Query:**
 
 ```graphql
 query {
-  whatsForFun
-  whatsForDinner
+  todos {
+    text
+    id
+    completed
+  }
 }
 ```
 
@@ -34,13 +37,29 @@ The server returns the following response:
 ```json
 {
   "data": {
-    "whatsForDinner": "Tonight we eat 🥗",
-    "whatsForFun": "Fun 🎃"
+    "todos": [
+      {
+        "text": "Hello from GraphQL",
+        "id": "1583752618984",
+        "completed": true
+      },
+      {
+        "text": "react",
+        "id": "1583752700115",
+        "completed": true
+      },
+      {
+        "text": "graphql",
+        "id": "1583752704968",
+        "completed": false
+      }
+    ]
   }
 }
 ```
 
 ## Playground
 
-![Screenshot](https://user-images.githubusercontent.com/34713212/75655278-8ecc4400-5c72-11ea-8557-30ff7f4c337e.png)
+![play](https://user-images.githubusercontent.com/34713212/76208621-1ab11380-6211-11ea-9d75-6744b678e59a.png)
+
 
