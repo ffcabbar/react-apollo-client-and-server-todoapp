@@ -6,7 +6,7 @@ Client: React.js with ApolloClient  &amp;&amp;  Server: ApolloServer :metal: :)
 **Clone the repository:**
 
 ```sh
-git clone https://github.com/ffcabbar/react-apollo-client-example
+git clone https://github.com/ffcabbar/react-apollo-client-and-server-todoapp.git
 ```
 
 **Install dependencies and run the app:**
