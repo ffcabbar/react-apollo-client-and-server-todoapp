@@ -12,6 +12,11 @@ git clone https://github.com/ffcabbar/react-apollo-client-and-server-todoapp.git
 **Install dependencies and run the app:**
 
 ```sh
+cd server
+yarn install # or npm install
+yarn start   # or npm start
+🌠
+cd client
 yarn install # or npm install
 yarn start   # or npm start
 ```
